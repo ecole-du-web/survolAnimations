@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #626262;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carteRotation {
+    width: 280px;
+    height: 450px;
+    background: #333;
+    cursor: pointer;
+    transition: background 0.4s linear;
+}
+.headPhoto {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gold;
+}
+.cercle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s background linear;
+}
+.headPhoto .cercle svg {
+    width: 80px;
+    fill: #333;
+}
+h2 {
+    text-align: center;
+    color: #f1f1f1;
+    transition: 0.4s linear color;
+}
+.txt {
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    transition: 0.4s color linear;
+}
+.carteRotation:hover {
+    background: #f5cb22;
+}
+.carteRotation:hover .cercle {
+    background: #333;
+}
+.carteRotation:hover .cercle svg {
+    transition: 0.4s all linear;
+    fill: gold;
+    transform: rotateY(360deg);
+}
+.carteRotation:hover .txt {
+    color: #333;
+}
+.carteRotation:hover h2 {
+    color: #333;
+}

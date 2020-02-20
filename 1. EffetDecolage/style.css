@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: sans-serif;
+}
+.carteDecole {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    position: relative;
+}
+.contenu {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: white;
+    transition: 0.25s ease-in-out;
+}
+.txt1 {
+    margin: 30px;
+}
+.bordureBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed black;
+    top: 0;
+    z-index: -1;
+}
+.contenu:hover {
+    transform: translate(-20px, -20px)
+}

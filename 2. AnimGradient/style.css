@@ -1,0 +1,57 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #333;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carte {
+    background: #fff;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    position: relative;
+}
+h2::before {
+    content: "“";
+    font-size: 100px;
+    position: absolute;
+    top: -45px;
+    left: 5px;
+}
+h2::after {
+    content: "”";
+    font-size: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+span {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.carte {
+    background: rgb(245,105,62);
+
+    box-shadow: 0px 200px 100px -100px white inset;
+    transition: background 1s ease, box-shadow 1s ease;
+}
+.carte:hover {
+    background: #b993d6;
+    box-shadow: 0 200px 100px -100px #8ca6db inset;
+}

@@ -1,0 +1,127 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+    background: white;
+}
+.btn:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,0.1);
+}
+.btn:hover::before, .btn:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fda8cf;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s danslesens infinite;
+}
+
+.btn:hover::after {
+    background: #f3ce5e;
+    animation: 2s inverse infinite;
+}
+
+@keyframes danslesens {
+
+    0% {
+        top: -5px;
+        left: 0px;
+    }
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+    25% {
+        top: 0px;
+        left: 5px;
+    }
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+    50% {
+        top: 5px;
+        left: 0px;
+    }
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+    75% {
+        top: 0px;
+        left: -5px;
+    }
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+    10% {
+        top: -5px;
+        left: 0px;
+    }
+}
+
+
+@keyframes inverse {
+
+    0% {
+        top: -5px;
+        left: 0px;
+    }
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+    25% {
+        top: 0px;
+        left: 5px;
+    }
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+    50% {
+        top: 5px;
+        left: 0px;
+    }
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+    75% {
+        top: 0px;
+        left: -5px;
+    }
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+    10% {
+        top: -5px;
+        left: 0px;
+    }
+}
